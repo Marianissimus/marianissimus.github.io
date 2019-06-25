@@ -1,0 +1,6 @@
+accent: #dd4132;
+primary: #034f84;
+
+
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Quicksand', sans-serif;
