@@ -102,23 +102,5 @@
         "externalUrls": {
             "codepen": "https://codepen.io/marianissimus/full/MvjdNr/"
         }
-    },
-    {
-        "title": "English for kids",
-        "description": "A complete site, including its content, created from scratch with Joomla, Flash and other authoring tools.",
-        "imageUrl": "images/epc.jpg",
-        "externalUrls": {
-            "browser": "http://www.englezapentrucopii.ro",
-            "discontinued": true
-        }
-    },
-    {
-        "title": "dazi.ro",
-        "description": "Full online magazine using the modern DIVI theme. Has a megamenu and CSS customization.",
-        "imageUrl": "images/dazi.jpg",
-        "externalUrls": {
-            "browser": "http://dazi.ro/",
-            "discontinued": true
-        }
     }
 ]

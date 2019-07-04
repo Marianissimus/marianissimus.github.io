@@ -1,32 +1,41 @@
 <template>
   <div id="app">
-    This is it
-    Link to old <a href="../sites/CurrentRun/index.html">portfolio</a>
-    now for the fun part
-    <app-header></app-header>
-    <app-portfolio></app-portfolio>
-    <app-footer></app-footer>
+    <navigation class="navigation"></navigation>
+    <transition name="fade" mode="out-in">
+      <router-view></router-view>
+    </transition>
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import Portfolio from './components/Portfolio.vue'
-import Footer from './components/Footer.vue'
+import navigation from './components/Navigation'
+
 export default {
   components: {
-    'app-header': Header,
-    'app-portfolio': Portfolio,
-    'app-footer': Footer
+    navigation
   },
   name: 'app',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
     }
   }
 }
 </script>
 
 <style lang="scss">
+@import "styles/style.scss";
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  transition: opacity .5s ease;
+}
+
+.fade-leave {}
+
+.fade-leave-active {
+  transition: opacity .5s ease;
+  opacity: 0;
+}
 </style>
