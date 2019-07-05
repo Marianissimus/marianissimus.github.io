@@ -284,7 +284,7 @@
 </template>
 
 <script>
-import anime from '../../sites/ahoy/scripts/anime.min.js'
+import anime from "animejs";
 import 'waypoints/lib/noframework.waypoints.min.js'
 
 export default{
