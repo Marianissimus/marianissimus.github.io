@@ -110,7 +110,7 @@ function toggleBackToTop(){
 
 //fade cards on load
 function preparePanel(){
-  $(".storytext, .storyimage").each(function(){
+  $(".panel, .storytext, .storyimage").each(function(){
 //remove classes previously assigned and based on position
  $(this).removeClass("slidefromleft slidefromright");
 //assign classes 
@@ -124,22 +124,13 @@ function preparePanel(){
 
 //animate cards when in view
 function animatePanel(){
-  $(".storytext, .storyimage").each(function(){
+  $(".panel, .storytext, .storyimage").each(function(){
       if ( $(this).offset().top <  $(window).scrollTop() + window.innerHeight ){
         $(this).addClass("sliding");
       } else {
          $(this).removeClass("sliding");
       }
    })
-  $(".panel").each(function(){
-    if ( $(this).offset().top <  $(window).scrollTop() + window.innerHeight ){
-      $(this).addClass("fadingIn");
-      $(this).removeClass("fadingOut");
-    } else {
-       $(this).addClass("fadingOut");
-       $(this).removeClass("fadingIn");
-    }
-  })
 }
 
 
@@ -233,7 +224,7 @@ menuAnimation
     height: [60, 270],
     loop: false,
     borderRadius: ['50%', '0%'],
-    backgroundColor: ["rgb(30, 80, 226)", "rgb(255, 255, 255)"],
+    backgroundColor: ["rgb(0, 77, 87)", "rgb(255, 255, 255)"],
     autoplay: false,
     offset: 0
   })

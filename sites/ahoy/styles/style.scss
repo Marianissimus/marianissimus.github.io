@@ -8,8 +8,7 @@ $timepiecewidth: 30%;
 $bulletwidth: 40px;
 $marginfromtop: 30px;
 $shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-$darkblue: #1E50E2;
-$lightblue: #09B3EF;
+$darkblue: #1A237E;
 $accentred: #DC4233;
 $decofont: 	'Quicksand', sans-serif;
 $listdecofont: 	'Cinzel Decorative', serif;
@@ -28,22 +27,16 @@ $cardwidth: 300px;
   }
 }
 
-@mixin shadow {
-  filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
-  -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
-  }
-
-
 @mixin gradientblue { 
-background: $darkblue;  /* from the wonderful UI gradients */
-background: -webkit-linear-gradient(to bottom, $darkblue, $lightblue);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, $darkblue, $lightblue); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #005C97;  /* from the wonderful UI gradients */
+background: -webkit-linear-gradient(to bottom, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 @mixin gradientsea {
 background: #c0c0aa;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, $lightblue, #c0c0aa);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, $lightblue, #c0c0aa); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: -webkit-linear-gradient(to bottom, #1cefff, #c0c0aa);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #1cefff, #c0c0aa); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 *, html, body{
@@ -55,11 +48,11 @@ background: linear-gradient(to bottom, $lightblue, #c0c0aa); /* W3C, IE 10+/ Edg
 
 body{
 	overflow-x: hidden;
-	background-color: $darkblue;
-	background-image: -webkit-linear-gradient(30deg, $darkblue 0%, $lightblue 100%);
-	background-image: -moz-linear-gradient(30deg, $darkblue 0%, $lightblue 100%);
-	background-image: -o-linear-gradient(30deg, $darkblue 0%, $lightblue 100%);
-	background-image: linear-gradient(30deg, $darkblue 0%, $lightblue 100%);
+background-color: #0093E9;
+background-image: -webkit-linear-gradient(30deg, #0093E9 0%, #80D0C7 100%);
+background-image: -moz-linear-gradient(30deg, #0093E9 0%, #80D0C7 100%);
+background-image: -o-linear-gradient(30deg, #0093E9 0%, #80D0C7 100%);
+background-image: linear-gradient(30deg, #0093E9 0%, #80D0C7 100%);
 }
 
 *, body, html{
@@ -81,12 +74,12 @@ body{
  	border-radius: 50%;
   transition: all .3s ease;
   font-size: 2em;
-	text-align: center;
+  text-align: center;
  }
 
 
 .back2top:hover {
-  background-color: $darkblue; 
+  background-color: rgb(0, 77, 87); 
   transition: all .3s ease;
  }
 
@@ -138,7 +131,7 @@ nav ul li{
 }
 
 nav ul li a{
-	color: $darkblue;
+	color: #004d57;
 	font-size: 2em;
 	font-family:  $listdecofont;
 }
@@ -159,7 +152,9 @@ section{
 	min-height: 100vh;
 }
 
+
 .container-section{
+	background-color: blue;
 	display: flex;
 	flex-wrap: no-wrap;
 	flex-direction: column;
@@ -176,13 +171,12 @@ section{
 	display: block;
 	margin: 0 auto;
 	width: 180px;
-	color: #09B3EF;
+	color: #004d57;
 	font-family: $decofont;
 	font-weight: 300;
 	font-size: 2em;
 	text-transform: uppercase;
-	 position: relative;
-	 @include shadow;
+ position: relative;
 }
 
 .title-container h1:after{
@@ -209,7 +203,7 @@ section{
 }
 
 #portfolio h1:before, #portfolio h1:after{
- background-image: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3Csvg xmlns='http://www.w3.org/2000/svg' width='157.06' height='12.29'%3E%3Cg id='Layer_1'%3E%3Cpath fill='none' stroke='%2309B3EF' stroke-width='3' stroke-miterlimit='10' d='M0.23,2.62c5.61,0,5.61,6,11.21,6 c5.61,0,5.61-6,11.21-6s5.61,6,11.21,6c5.61,0,5.61-6,11.21-6c5.61,0,5.61,6,11.21,6c5.61,0,5.61-6,11.21-6s5.61,6,11.21,6 c5.6,0,5.6-6,11.21-6s5.61,6,11.21,6c5.61,0,5.61-6,11.21-6c5.61,0,5.61,6,11.22,6c5.61,0,5.61-6,11.21-6c5.61,0,5.61,6,11.22,6 s5.61-6,11.22-6'/%3E%3C/g%3E%3C/svg%3E");
+ background-image: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3Csvg xmlns='http://www.w3.org/2000/svg' width='157.06' height='12.29'%3E%3Cg id='Layer_1'%3E%3Cpath fill='none' stroke='%23004d57' stroke-width='3' stroke-miterlimit='10' d='M0.23,2.62c5.61,0,5.61,6,11.21,6 c5.61,0,5.61-6,11.21-6s5.61,6,11.21,6c5.61,0,5.61-6,11.21-6c5.61,0,5.61,6,11.21,6c5.61,0,5.61-6,11.21-6s5.61,6,11.21,6 c5.6,0,5.6-6,11.21-6s5.61,6,11.21,6c5.61,0,5.61-6,11.21-6c5.61,0,5.61,6,11.22,6c5.61,0,5.61-6,11.21-6c5.61,0,5.61,6,11.22,6 s5.61-6,11.22-6'/%3E%3C/g%3E%3C/svg%3E");
 } 
 
 
@@ -234,140 +228,39 @@ section{
 //----- end of CONTAINER, SECTIONS and TITLES---- //
 
 //the about section
-
-#sky{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100px;
-	z-index: 2;
-}
-
-#sun{
-  width: 100px;
-  height: 100px;
-  animation: sunrotate 20s linear infinite;
-  background-image: url("../images/sun.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  border: none;
-  outline: none;
-  @include shadow;
-  position: relative;
-  left: 10px;
-  top: 10px;
-  float: left;
-}
-
-@keyframes sunrotate {
-  0% {transform: rotate(0deg) };
-  100% {transform: rotate(360deg)};
-}
-
-//SEA SECTION
-
-#undersea{
-  background-color: white;
-  width: 100%;
-  position: relative;
-  height: auto;
-  top: -10px;
-  z-index: 1000;
-}
-
-
-#allwaves{
-  position: absolute;
-  bottom: 0;
-  left: 0;
-	width: 110%;
-	background-color: white;
-
-}
-
-#allwaves::after{
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left:0;
-	width: 110%;
-	height: 100px;
-	background-color: white;
-	z-index: 10;
-}
-
-.wave{
-  width: 120%;
-  height: 100px;
-  background-size: contain;
-  background-repeat: repeat-x;
-  animation: waveanimation 2s linear infinite alternate;
-  transform-origin: 50% -50%;
-  position: absolute;
-
-}
-
-@keyframes waveanimation{
-  0% {transform: translate(0, 10px) rotate(1deg)};
-  100% {transform: translate(0, 0px) rotate(-1deg)};
-}
-
-#wave1{
-  background-image: url("../images/wavewhite1.png");
-  bottom: 0px;
-	z-index: 100;
-}
-
-#wave2{
-  background-image: url("../images/waveblue1.png");
-  animation-delay: -1s;
-  bottom: 30px;
-	z-index: 90;
-	// @include shadow;
-}
-
-#wave3{
-  background-image: url("../images/waveblue2.png");
-  bottom: 60px;
-  z-index: 60;
-	animation-delay: -3s;
-	@include shadow;
-}
-
 .about{
 	justify-content: center;
 	position: relative;
 	min-height: 100vh;
 	position: relative;
 	z-index: 1;
-	background: no-repeat url("../images/boat2.jpg");
+	background: no-repeat url("../images/sea1920.jpg");
 	background-size: cover;
- 	background-position: 50% 50%;
+ background-position: 50% 50%;
 
-// 	@media screen and (max-width: 375px){
-//   	background-image: url("../images/sea375.jpg");
-//   }
+	@media screen and (max-width: 375px){
+  	background-image: url("../images/sea375.jpg");
+  }
 
-//  @media screen and (min-width: 376px) and (max-width: 480px){
-//   	background-image: url("../images/sea480.jpg");
-//   }
+ @media screen and (min-width: 376px) and (max-width: 480px){
+  	background-image: url("../images/sea480.jpg");
+  }
 
-//   @media screen and (min-width: 481px) and (max-width: 768px){
-//   	background-image: url("../images/sea768.jpg");
-//  }
+  @media screen and (min-width: 481px) and (max-width: 768px){
+  	background-image: url("../images/sea768.jpg");
+ }
 
-//  @media screen and (min-width: 769px) and (max-width: 1280px){
-//   	background-image: url("../images/sea1280.jpg");
-//  } 
+ @media screen and (min-width: 769px) and (max-width: 1280px){
+  	background-image: url("../images/sea1280.jpg");
+ } 
 
-//   @media screen and (min-width: 1281px) and (max-width: 1366px){
-//   	background-image: url("../images/sea1366.jpg");
-//  }
+  @media screen and (min-width: 1281px) and (max-width: 1366px){
+  	background-image: url("../images/sea1366.jpg");
+ }
 
-//   @media screen and (min-width: 1367px){
-//   	background-image: url("../images/sea1920.jpg");
-//  } 
+  @media screen and (min-width: 1367px){
+  	background-image: url("../images/sea1920.jpg");
+ } 
 
 }
 
@@ -378,25 +271,29 @@ section{
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: rgba(9, 179, 239, 0.9);
-	background: -moz-linear-gradient(left, rgba(9, 179, 239, 0.9) 0%, rgba(30, 80, 226, 0.9) 100%);
-	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(9, 179, 239, 0.9)), color-stop(100%, rgba(30, 80, 226, 0.9)));
-	background: -webkit-linear-gradient(left, rgba(9, 179, 239, 0.9) 0%, rgba(30, 80, 226, 0.9) 100%);
-	background: -o-linear-gradient(left, rgba(9, 179, 239, 0.9) 0%, rgba(30, 80, 226, 0.9) 100%);
-	background: -ms-linear-gradient(left, rgba(9, 179, 239, 0.9) 0%, rgba(30, 80, 226, 0.9) 100%);
-	background: linear-gradient(to right, rgba(9, 179, 239, 0.9) 0%, rgba(30, 80, 226, 0.9) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#09b3ef', endColorstr='#1e50e2', GradientType=1);
+	background: radial-gradient(ellipse at center, rgba(0,0,0,.6) 20%,rgba(0,0,0,0.2) 70%);
+	 //background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
 	z-index: -1;
 }
 
 #logocontainer{
 	position: relative;
-	top: -10vh;
 }
 
-#logo {
-	@include shadow;
-	z-index: 100;
+
+//thinking about a shadow on logo container
+#logocontainer:before{
+content: "";
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -51%); 
+border-radius: 50%;
+width: 240px;
+height: 240px;
+z-index: -10;
+//background gradient: think about it;
+//@include gradientsea;
 }
 
 h2{
@@ -410,6 +307,8 @@ h2{
   	-moz-osx-font-smoothing: grayscale;
   	color: white;
   	overflow: hidden;
+ text-shadow: 1px 1px 0px rgba(0, 77, 87, 0.3),
+												-1px -1px 0px rgba(0, 77, 87, 0.3);
 }
 
 .about h2, .about h3{
@@ -419,11 +318,10 @@ h2{
 
 .about h2{
 	//keep this for intro animation:
-	top: -140px;
+	top: -30px;
 	font-family: $listdecofont;
 	font-size: 1.4em;
 	font-weight: 300;
-	@include shadow;
 }
 
 // .about h2:after{
@@ -447,8 +345,8 @@ h2{
 
 .about h3{
 	//keep this for intro animation:
-	top: -140px;
-	@include shadow;
+	top: -50px;
+
 }
 
 .about a{
@@ -471,23 +369,22 @@ h2{
  }
 }
 
-.about a:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 150px;
-  height: 100%;
-  background-image: url("../images/wavylinen2.svg");
-  background-repeat: repeat-x;
-  background-position: left 300px bottom 10px;
-  background-size: 70px;
+.about a:after{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 150px;
+	height: 100%;
+ background-image: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3Csvg xmlns='http://www.w3.org/2000/svg' width='157.06' height='12.29'%3E%3Cg id='Layer_1'%3E%3Cpath fill='none' stroke='%23FFF' stroke-width='3' stroke-miterlimit='10' d='M0.23,2.62c5.61,0,5.61,6,11.21,6 c5.61,0,5.61-6,11.21-6s5.61,6,11.21,6c5.61,0,5.61-6,11.21-6c5.61,0,5.61,6,11.21,6c5.61,0,5.61-6,11.21-6s5.61,6,11.21,6 c5.6,0,5.6-6,11.21-6s5.61,6,11.21,6c5.61,0,5.61-6,11.21-6c5.61,0,5.61,6,11.22,6c5.61,0,5.61-6,11.21-6c5.61,0,5.61,6,11.22,6 s5.61-6,11.22-6'/%3E%3C/g%3E%3C/svg%3E");
+	background-repeat: repeat-x;
+	background-position: left 200px bottom 10px;
 }
 
 .about a:hover::after{
 		animation: 5s wave linear infinite;
-		// background-color: rgba(0, 0, 0, 0.7);
-		z-index: -10;
+				//background-color: rgba(0, 0, 0, 0.7);
+				z-index: -10;
 }
 
 @keyframes wave {
@@ -502,7 +399,8 @@ h2{
 
 //the portfolio section
 #portfolio{
-background: linear-gradient(to bottom, white, #e6e6e6) ;
+background: #e6e6e6;
+background: radial-gradient(circle at center, #CFDEF3, 100%);
 position: relative;
 }
 
@@ -554,7 +452,7 @@ position: relative;
 	padding: 5px;
 	color: black;
 	will-change: transform;
-	box-shadow: $shadow;
+	//box-shadow: $shadow;
 	background: white;
 	overflow: hidden;
 }
@@ -582,7 +480,9 @@ position: relative;
 .front {
 	z-index: 2;
 	width: 100%;
-	background: $lightblue;
+	background: #06beb6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #48b1bf, #06beb6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #48b1bf, #06beb6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .back {
@@ -592,7 +492,7 @@ position: relative;
 	-ms-transform: rotateY(-180deg);
 	-moz-transform: rotateY(-180deg);  
 	transform: rotateY(-180deg);  
-	background-color: $darkblue;
+	background-color: #004d57;
 	color: white;
 	text-align: center;
 }
@@ -669,7 +569,7 @@ position: relative;
 	display: inline-block;
 	text-align: left;
 	width: 130px;
-	background-color: $lightblue; 
+background-color: #06beb6; 
   padding: 25px 25px 25px 15px;
   -webkit-transition: all .4s;
   -o-transition: all .4s;
@@ -692,12 +592,12 @@ position: relative;
   background-color: $accentred;
   transition: all .5s ease;
 box-shadow:
-1px 1px $lightblue,
-2px 2px $lightblue,
-3px 3px $lightblue,
-4px 4px $lightblue,
-5px 5px $lightblue,
-6px 6px $lightblue;
+1px 1px #00d6d6,
+2px 2px #00d6d6,
+3px 3px #00d6d6,
+4px 4px #00d6d6,
+5px 5px #00d6d6,
+6px 6px #00d6d6;
 -webkit-transform: translateY(-3px);
 transform: translateY(-3px);
 }
@@ -794,7 +694,7 @@ transform: translateY(-3px);
 }
 
 .arrowleft:hover, .arrowright:hover {
-	background-color: $darkblue; 
+	background-color: rgb(0, 77, 87); 
   transition: all .3s ease;
 }
 
@@ -836,15 +736,14 @@ transform: translateY(-3px);
 
 //the contact section
 #contact{
- background: $darkblue;
+ background: #004d57;
   position: relative;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("../images/bottom.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center bottom; 
   background-size: cover;
-	min-height: 100vh;
-	z-index: 1;
+  min-height: 100vh;
 	@media screen and (max-width: 375px){
   	background-image: url("../images/bottom375.jpg");
   }
@@ -868,24 +767,6 @@ transform: translateY(-3px);
   @media screen and (min-width: 1367px){
   	background-image: url("../images/bottom.jpg");
  } 
-}
-
-#contact:before{
-	position: absolute;
-	content:'';
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	background: rgba(9, 179, 239, 0.9);
-	background: -moz-linear-gradient(left, rgba(9, 179, 239, 0.9) 0%, rgba(30, 80, 226, 0.9) 100%);
-	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(9, 179, 239, 0.9)), color-stop(100%, rgba(30, 80, 226, 0.9)));
-	background: -webkit-linear-gradient(left, rgba(9, 179, 239, 0.9) 0%, rgba(30, 80, 226, 0.9) 100%);
-	background: -o-linear-gradient(left, rgba(9, 179, 239, 0.9) 0%, rgba(30, 80, 226, 0.9) 100%);
-	background: -ms-linear-gradient(left, rgba(9, 179, 239, 0.9) 0%, rgba(30, 80, 226, 0.9) 100%);
-	background: linear-gradient(to right, rgba(9, 179, 239, 0.9) 0%, rgba(30, 80, 226, 0.9) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#09b3ef', endColorstr='#1e50e2', GradientType=1);
-	z-index: -1;
 }
 
 #contactscontainer{
