@@ -195,6 +195,10 @@ section {
   background-position: left top 0px;
 }
 
+#portfolio .title-container {
+  margin-top: -1.6em;
+}
+
 #portfolio h1:before, #portfolio h1:after {
   background-image: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3Csvg xmlns='http://www.w3.org/2000/svg' width='157.06' height='12.29'%3E%3Cg id='Layer_1'%3E%3Cpath fill='none' stroke='%2309B3EF' stroke-width='3' stroke-miterlimit='10' d='M0.23,2.62c5.61,0,5.61,6,11.21,6 c5.61,0,5.61-6,11.21-6s5.61,6,11.21,6c5.61,0,5.61-6,11.21-6c5.61,0,5.61,6,11.21,6c5.61,0,5.61-6,11.21-6s5.61,6,11.21,6 c5.6,0,5.6-6,11.21-6s5.61,6,11.21,6c5.61,0,5.61-6,11.21-6c5.61,0,5.61,6,11.22,6c5.61,0,5.61-6,11.21-6c5.61,0,5.61,6,11.22,6 s5.61-6,11.22-6'/%3E%3C/g%3E%3C/svg%3E");
 }
@@ -216,55 +220,6 @@ section {
 #story .title-container h1:before, .contact .title-container h1:before {
   background-image: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3Csvg xmlns='http://www.w3.org/2000/svg' width='157.06' height='12.29'%3E%3Cg id='Layer_1'%3E%3Cpath fill='none' stroke='%23FFF' stroke-width='4' stroke-miterlimit='10' d='M0.23,2.62c5.61,0,5.61,6,11.21,6 c5.61,0,5.61-6,11.21-6s5.61,6,11.21,6c5.61,0,5.61-6,11.21-6c5.61,0,5.61,6,11.21,6c5.61,0,5.61-6,11.21-6s5.61,6,11.21,6 c5.6,0,5.6-6,11.21-6s5.61,6,11.21,6c5.61,0,5.61-6,11.21-6c5.61,0,5.61,6,11.22,6c5.61,0,5.61-6,11.21-6c5.61,0,5.61,6,11.22,6 s5.61-6,11.22-6'/%3E%3C/g%3E%3C/svg%3E");
   color: white;
-}
-
-#sky {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  z-index: 2;
-}
-
-#sun {
-  width: 100px;
-  height: 100px;
-  -webkit-animation: sunrotate 20s linear infinite;
-          animation: sunrotate 20s linear infinite;
-  background-image: url("../images/sun.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  border: none;
-  outline: none;
-  filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
-  -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
-  position: relative;
-  left: 10px;
-  top: 10px;
-  float: left;
-}
-
-@-webkit-keyframes sunrotate {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes sunrotate {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
 }
 
 #undersea {
@@ -434,6 +389,8 @@ h2 {
   padding: 25px 0;
   color: white;
   position: relative;
+  filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
+  -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
   font-family: "Cinzel Decorative", serif;
   font-weight: 300;
 }
@@ -457,10 +414,12 @@ h2 {
   left: 0;
   width: 150px;
   height: 100%;
-  background-image: url("../images/wavylinen2.svg");
+  background-image: url("../images/wavy3.svg");
   background-repeat: repeat-x;
   background-position: left 300px bottom 10px;
-  background-size: 70px;
+  background-size: 100px;
+  filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
+  -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
 }
 
 .about a:hover::after {
