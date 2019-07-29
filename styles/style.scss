@@ -369,7 +369,7 @@ section{
 }
 
 #logo {
-	// @include shadow;
+	 @include shadow;
 	z-index: 100;
 }
 
@@ -422,23 +422,20 @@ h2{
 .about h3{
 	//keep this for intro animation:
 	top: -140px;
-	@include shadow;
 }
 
 .about a{
 	width: 150px;
 	display: inline-block;
 	margin: 20px 30px;
-	padding: 25px 0;
+	padding: 18px 0;
 	color: white;
 	position: relative;
-	@include shadow;
 	font-family: $listdecofont;
 	font-weight: 300;
 	@media screen and (max-width: 450px){
 	 display: block;
 	 margin: 20px auto;
-	 padding: 20px 0;
 	 &:nth-of-type(2){
 	 	margin: 10px auto;
 	 	top: -30px;
@@ -457,13 +454,26 @@ h2{
   background-repeat: repeat-x;
   background-position: left 300px bottom 10px;
 	background-size: 100px;
-	@include shadow;
+	border-radius: 3px;
+	-o-transition: background-color ease .5s;
+	-ms-transition: background-color ease .5s;
+	-moz-transition: background-color ease .5s;
+	-webkit-transition: background-color ease .5s;
+	transition: background-color ease .5s;
 }
 
 .about a:hover::after{
 		animation: 5s wave linear infinite;
-		// background-color: rgba(0, 0, 0, 0.7);
+		background-color: $lightblue;
 		z-index: -10;
+		-o-transition: background-color ease .5s;
+		-ms-transition: background-color ease .5s;
+		-moz-transition: background-color ease .5s;
+		-webkit-transition: background-color ease .5s;
+		transition: background-color ease .5s;
+		@media screen and (max-width: 650px){ 
+			animation: none;
+		}
 }
 
 @keyframes wave {
@@ -590,7 +600,7 @@ position: relative;
   border-radius: 50%;
   outline: none;
   margin-top: 5px;
-	 background-color: transparent;
+	background-color: transparent;
   color: white;
 }
 

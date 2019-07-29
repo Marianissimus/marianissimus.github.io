@@ -342,6 +342,8 @@ section {
 }
 
 #logo {
+  filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
+  -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
   z-index: 100;
 }
 
@@ -378,19 +380,15 @@ h2 {
 
 .about h3 {
   top: -140px;
-  filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
-  -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
 }
 
 .about a {
   width: 150px;
   display: inline-block;
   margin: 20px 30px;
-  padding: 25px 0;
+  padding: 18px 0;
   color: white;
   position: relative;
-  filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
-  -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
   font-family: "Cinzel Decorative", serif;
   font-weight: 300;
 }
@@ -399,7 +397,6 @@ h2 {
   .about a {
     display: block;
     margin: 20px auto;
-    padding: 20px 0;
   }
   .about a:nth-of-type(2) {
     margin: 10px auto;
@@ -418,14 +415,25 @@ h2 {
   background-repeat: repeat-x;
   background-position: left 300px bottom 10px;
   background-size: 100px;
-  filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
-  -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
+  border-radius: 3px;
+  -webkit-transition: background-color ease .5s;
+  transition: background-color ease .5s;
 }
 
 .about a:hover::after {
   -webkit-animation: 5s wave linear infinite;
           animation: 5s wave linear infinite;
+  background-color: #09B3EF;
   z-index: -10;
+  -webkit-transition: background-color ease .5s;
+  transition: background-color ease .5s;
+}
+
+@media screen and (max-width: 650px) {
+  .about a:hover::after {
+    -webkit-animation: none;
+            animation: none;
+  }
 }
 
 @-webkit-keyframes wave {
