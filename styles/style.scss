@@ -209,12 +209,17 @@ section{
 }
 
 #portfolio .title-container{
-	margin-top: -1.6em;
+	margin-top: -1.4em;
 }
 
 #portfolio h1:before, #portfolio h1:after{
  background-image: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3Csvg xmlns='http://www.w3.org/2000/svg' width='157.06' height='12.29'%3E%3Cg id='Layer_1'%3E%3Cpath fill='none' stroke='%2309B3EF' stroke-width='3' stroke-miterlimit='10' d='M0.23,2.62c5.61,0,5.61,6,11.21,6 c5.61,0,5.61-6,11.21-6s5.61,6,11.21,6c5.61,0,5.61-6,11.21-6c5.61,0,5.61,6,11.21,6c5.61,0,5.61-6,11.21-6s5.61,6,11.21,6 c5.6,0,5.6-6,11.21-6s5.61,6,11.21,6c5.61,0,5.61-6,11.21-6c5.61,0,5.61,6,11.22,6c5.61,0,5.61-6,11.21-6c5.61,0,5.61,6,11.22,6 s5.61-6,11.22-6'/%3E%3C/g%3E%3C/svg%3E");
 } 
+
+#portfolio .title-container h1{
+  position: relative;
+  width: 250px;
+}
 
 
 #story .title-container h1, .contact .title-container h1{
@@ -227,7 +232,7 @@ section{
 }
 
 .contact .title-container h1{
-	width: 150px;
+	width: 200px;
 }
 
 #story .title-container h1:after, .contact .title-container h1:after,
@@ -318,31 +323,6 @@ section{
 	background: no-repeat url("../images/boat2.jpg");
 	background-size: cover;
  	background-position: 50% 50%;
-
-// 	@media screen and (max-width: 375px){
-//   	background-image: url("../images/sea375.jpg");
-//   }
-
-//  @media screen and (min-width: 376px) and (max-width: 480px){
-//   	background-image: url("../images/sea480.jpg");
-//   }
-
-//   @media screen and (min-width: 481px) and (max-width: 768px){
-//   	background-image: url("../images/sea768.jpg");
-//  }
-
-//  @media screen and (min-width: 769px) and (max-width: 1280px){
-//   	background-image: url("../images/sea1280.jpg");
-//  } 
-
-//   @media screen and (min-width: 1281px) and (max-width: 1366px){
-//   	background-image: url("../images/sea1366.jpg");
-//  }
-
-//   @media screen and (min-width: 1367px){
-//   	background-image: url("../images/sea1920.jpg");
-//  } 
-
 }
 
 .about:after{
@@ -400,21 +380,6 @@ h2{
 	@include shadow;
 }
 
-// .about h2:after{
-// 	position: absolute;
-// 	content: "";
-// 	top: -30px;
-// 	left: 0;
-// 	width: 100%;
-// 	height: 150px;
-// background-color: rgba(0, 77, 87, 0.7);
-// 	z-index: -10;
-// 	@media screen and (max-width: 410px){
-// 	height: 340px;
-// 	padding-bottom: 20px;
-// 	}
-// }
-
 .dontbreak{
 	white-space: nowrap;
 }
@@ -454,7 +419,7 @@ h2{
   background-repeat: repeat-x;
   background-position: left 300px bottom 10px;
 	background-size: 100px;
-	border-radius: 3px;
+	border-radius: 8px;
 	-o-transition: background-color ease .5s;
 	-ms-transition: background-color ease .5s;
 	-moz-transition: background-color ease .5s;
@@ -464,7 +429,7 @@ h2{
 
 .about a:hover::after{
 		animation: 5s wave linear infinite;
-		background-color: $lightblue;
+		background-color: $darkblue;
 		z-index: -10;
 		-o-transition: background-color ease .5s;
 		-ms-transition: background-color ease .5s;
