@@ -124,10 +124,12 @@ nav{
 }
 
 nav ul{
+	display: block;
 	position: relative;
 	top: 70px;
- right: 0px;
+ 	right: 0px;
 	margin-right: 10px;
+	padding-bottom: 30px;
 }
 
 nav ul li{
@@ -182,7 +184,6 @@ section{
 	font-size: 2em;
 	text-transform: uppercase;
 	 position: relative;
-	 @include shadow;
 }
 
 .title-container h1:after{
@@ -345,11 +346,10 @@ section{
 
 #logocontainer{
 	position: relative;
-	top: -10vh;
+	top: -7vh;
 }
 
 #logo {
-	 @include shadow;
 	z-index: 100;
 }
 
@@ -373,11 +373,10 @@ h2{
 
 .about h2{
 	//keep this for intro animation:
-	top: -140px;
+	top: -120px;
 	font-family: $listdecofont;
-	font-size: 1.4em;
+	font-size: 1.2em;
 	font-weight: 300;
-	@include shadow;
 }
 
 .dontbreak{
@@ -505,7 +504,6 @@ position: relative;
 	padding: 5px;
 	color: black;
 	will-change: transform;
-	box-shadow: $shadow;
 	background: white;
 	overflow: hidden;
 }
@@ -642,13 +640,13 @@ position: relative;
 .linkbuttons a:hover{
   background-color: $accentred;
   transition: all .5s ease;
-box-shadow:
-1px 1px $lightblue,
-2px 2px $lightblue,
-3px 3px $lightblue,
-4px 4px $lightblue,
-5px 5px $lightblue,
-6px 6px $lightblue;
+	box-shadow:
+	1px 1px $lightblue,
+	2px 2px $lightblue,
+	3px 3px $lightblue,
+	4px 4px $lightblue,
+	5px 5px $lightblue,
+	6px 6px $lightblue;
 -webkit-transform: translateY(-3px);
 transform: translateY(-3px);
 }

@@ -82,10 +82,12 @@ nav {
 }
 
 nav ul {
+  display: block;
   position: relative;
   top: 70px;
   right: 0px;
   margin-right: 10px;
+  padding-bottom: 30px;
 }
 
 nav ul li {
@@ -136,8 +138,6 @@ section {
   font-size: 2em;
   text-transform: uppercase;
   position: relative;
-  filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
-  -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
 }
 
 .title-container h1:after {
@@ -293,12 +293,10 @@ section {
 
 #logocontainer {
   position: relative;
-  top: -10vh;
+  top: -7vh;
 }
 
 #logo {
-  filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
-  -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
   z-index: 100;
 }
 
@@ -321,12 +319,10 @@ h2 {
 }
 
 .about h2 {
-  top: -140px;
+  top: -120px;
   font-family: "Cinzel Decorative", serif;
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-weight: 300;
-  filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
-  -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
 }
 
 .dontbreak {
@@ -457,7 +453,6 @@ h2 {
   padding: 5px;
   color: black;
   will-change: transform;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   background: white;
   overflow: hidden;
 }
